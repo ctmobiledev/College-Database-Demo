@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CollegeDatabase</string>
+    <string name="how_to_use">Enter the name or portion of a name in the search box, then tap the Refresh Database button. Entries previously in the database are cleared out (if any) and replaced with college and university names retrieved by network using the API.\n\nTo reset the database, tap the Clear Database button.</string>
+</resources>

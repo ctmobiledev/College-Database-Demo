@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editCollege"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit.EditCollegeFragment">
+
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit College" />
+
+
+    <!-- ENTRY FIELDS START -->
+    <!--
+      {
+        "country": "United States",
+        "state-province": null,
+        "web_pages": [
+          "http://www.marywood.edu"
+        ],
+        "alpha_two_code": "US",
+        "name": "Marywood University",
+        "domains": [
+          "marywood.edu"
+        ]
+      },
+    -->
+
+    <TextView
+        style="@style/BasicLabel"
+        android:text="College Name" />
+
+    <TextView
+        android:id="@+id/editCollegeName"
+        android:background="@drawable/bottom_border"
+        style="@style/StaticOutputField"/>
+
+    <TextView
+        style="@style/BasicLabel"
+        android:text="State/Province" />
+
+    <EditText
+        android:id="@+id/editStateProvince"
+        style="@style/BasicEntryFieldCaps"/>
+
+    <TextView
+        style="@style/BasicLabel"
+        android:text="Web Pages (JSON)" />
+
+    <TextView
+        android:id="@+id/editWebPagesJson"
+        android:background="@drawable/bottom_border"
+        style="@style/StaticOutputField"/>
+
+    <TextView
+        style="@style/BasicLabel"
+        android:layout_marginTop="7dp"
+        android:text="Country Code (2 letters)" />
+
+    <TextView
+        android:id="@+id/editAlphaTwoCode"
+        style="@style/StaticOutputField"/>
+
+    <TextView
+        style="@style/BasicLabel"
+        android:text="Domains (JSON)" />
+
+    <TextView
+        android:id="@+id/editDomainsJson"
+        android:background="@drawable/bottom_border"
+        style="@style/StaticOutputField"/>
+
+    <!-- ENTRY FIELDS END -->
+
+    <Button
+        android:id="@+id/btnSave"
+        style="@style/BasicButton"
+        android:text="Save"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        style="@style/BasicButton"
+        android:text="Cancel"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
